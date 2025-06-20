@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeTrack - DSA Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 CodeTrack</h1>
+    <h3>Track your DSA practice!</h3>
+
+    <form id="problemForm">
+        <label>Problem Title:</label><br>
+        <input type="text" id="title" required><br><br>
+
+        <label>Difficulty:</label><br>
+        <select id="difficulty">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select><br><br>
+
+        <label>Status:</label><br>
+        <select id="status">
+            <option>To Do</option>
+            <option>Solved</option>
+            <option>Review Later</option>
+        </select><br><br>
+
+        <button type="submit">Add Problem</button>
+    </form>
+
+    <hr>
+    <h2>📝 Your Problems:</h2>
+    <ul id="problemList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
